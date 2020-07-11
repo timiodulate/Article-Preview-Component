@@ -54,39 +54,57 @@ p {
 }
 .card-body {
     padding: 35px 25px 15px;
+    position: relative;
 }
 .avatarImage {
     width: 16%;
 }
 
-#myTooltips a img{
+#myTooltips a img,
+.shareImgC {
     background-color: var(--background);
     padding: 10px;
     border-radius: 50%;
 }
-#myTooltips a img:hover {
+/* #myTooltips a img:hover,
+.shareImgC {
     background-color: var(--last-section);
     color: white;
-}
-.tooltip-inner {
-    background-color: var(--last-section);
+} */
+.tooltip-inner,
+.activeLeft {
+    background-color: var(--header);
     width: fit-content;
     display: flex;
     align-items: center;
     padding: 15px 35px;
 }
-.tooltip-inner p {
+.tooltip-inner p,
+.activeLeft p {
     color: var(--text);
-    /* color: var(--last-section); */
     letter-spacing: 7px;
     margin: 0;
     font-weight: var(--bold);
     margin-right: 10px;
 }
-/* .tooltip-inner img { */
-    /* display: inline; */
-    /* border: solid;    */
-/* } */
+
+.active {
+    border-radius: 0 0 15px 15px;
+    padding: 15px 25px;
+    background-color: var(--header);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    display: none;
+}
+.show {
+    display: flex;
+}
+.activeLeft{
+    padding: 0;
+}
 
 
 .attribution { 
@@ -115,32 +133,9 @@ p {
     .card-body {
         padding: 35px;
     }
+    .active {
+        display: none;
+    }
 }
-
-/* MD - Medium Screen */
-/* @media only screen and (max-width: 765px) {
-    body {
-        justify-content: initial;
-	height: fit-content;
-    }
-
-    footer .footer-container {
-        grid-template-columns: 1fr;
-        margin-bottom: 20px;
-        row-gap: 15px;
-    }
-
-    .attribution { 
-        font-size: .6rem;
-        padding: 20px 10px;
-        color: white;
-    }
-} */
-
-/* SM - Small Screen */
-/* @media only screen and (max-width: 576px){
-
-} */
-
 
 /* @timiodulate css template */
