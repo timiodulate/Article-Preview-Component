@@ -102,7 +102,7 @@ p {
 
 /* Media Queries - Responsiveness */
 /* LG - Large Screen */
-@media only screen and (min-width: 380px) {
+@media only screen and (min-width: 765px) {
     .card {
         display: flex;
         flex-direction: row;
