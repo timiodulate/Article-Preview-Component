@@ -1,0 +1,139 @@
+@import url('http://fonts.googleapis.com/css?family=Manrope');
+
+/* Global Resets */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+
+    /* font-family */
+    --body: Manrope;
+
+    /* font-weight */
+    --normal: 500;
+    --bold: 700;
+
+    /* color */
+    --footer: hsl(243, 87%, 12%);
+    --last-section: hsl(238, 22%, 44%);
+    --button: hsl(224, 93%, 58%);
+    --anchor: hsl(170, 45%, 43%);
+    --card-bg: hsl(240, 75%, 98%);
+    --placeholder: hsl(0, 0%, 75%);
+    --text: white;
+}
+
+/* Dark mode */
+/* html[data-theme = 'dark'] {
+   
+} */
+
+body {
+    width: 100vw;
+    font-family: var(--body);
+    fo
+    /* background-image: url(../images/bg-intro-desktop.png); */
+    /* background-color: var(--red); */
+    /* background-blend-mode: screen; */
+}
+
+button {
+    cursor: pointer;
+    padding: 12px 50px;
+    border: none;
+    border-radius: .3rem;
+    font-size: .7rem;
+    font-family: var(--header), sans-serif;
+
+    background-color: var(--button);
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    text-decoration: none;
+}
+
+a  {
+    text-decoration: none;
+}
+
+
+.card {
+    border-radius: 20px;
+    width: 350px;
+}
+.avatarImage {
+    width: 16%;
+}
+
+/* nav */
+
+
+
+/* main */
+
+
+/* section */
+
+
+
+/* footer */
+footer .footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 30px;
+}
+.attribution { 
+    font-size: 13px; 
+    text-align: center; 
+    /* color: var(--text); */
+    padding: 20px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+
+
+/* Media Queries - Responsiveness */
+/* LG - Large Screen */
+/* @media only screen and (max-width: 992px) {
+
+} */
+
+/* MD - Medium Screen */
+/* @media only screen and (max-width: 765px) {
+    body {
+        justify-content: initial;
+	height: fit-content;
+    }
+
+    footer .footer-container {
+        grid-template-columns: 1fr;
+        margin-bottom: 20px;
+        row-gap: 15px;
+    }
+
+    .attribution { 
+        font-size: .6rem;
+        padding: 20px 10px;
+        color: white;
+    }
+} */
+
+/* SM - Small Screen */
+/* @media only screen and (max-width: 576px){
+
+} */
+
+
+/* @timiodulate css template */

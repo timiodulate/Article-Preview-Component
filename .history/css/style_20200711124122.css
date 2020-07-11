@@ -1,0 +1,123 @@
+@import url('http://fonts.googleapis.com/css?family=Manrope');
+
+/* Global Resets */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* font-family */
+    --body: Manrope;
+
+    /* font-weight */
+    --normal: 500;
+    --bold: 700;
+
+    /* color */
+    --background: hsl(210, 46%, 95%);
+    --header: hsl(217, 19%, 35%);
+
+    --text: hsl(212, 23%, 69%);
+    --last-section: hsl(214, 17%, 51%);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-family: var(--body);
+    font-size: 13px;
+    /* background-image: url(../images/bg-intro-desktop.png); */
+    background-color: var(--background);
+    /* background-blend-mode: screen; */
+}
+
+h5, h6 {
+    color: var(--header);
+    font-weight: var(--bold);
+}
+p {
+    color: var(--header);
+}
+
+
+/* .main {
+    padding: 30px;
+} */
+.card {
+    border-radius: 15px;
+    width: 330px;
+}
+.card-img-top {
+    border-radius: 15px 15px 0 0;
+}
+.card-body {
+    padding: 35px 25px 15px;
+}
+.avatarImage {
+    width: 16%;
+}
+
+
+/* footer */
+footer .footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 30px;
+}
+.attribution { 
+    font-size: 13px; 
+    text-align: center; 
+    /* color: var(--text); */
+    padding: 20px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+
+
+/* Media Queries - Responsiveness */
+/* LG - Large Screen */
+@media only screen and (min-width: 375px) {
+    .card {
+        display: flex;
+        flex-direction: row;
+        width: 330px
+    }
+}
+
+/* MD - Medium Screen */
+/* @media only screen and (max-width: 765px) {
+    body {
+        justify-content: initial;
+	height: fit-content;
+    }
+
+    footer .footer-container {
+        grid-template-columns: 1fr;
+        margin-bottom: 20px;
+        row-gap: 15px;
+    }
+
+    .attribution { 
+        font-size: .6rem;
+        padding: 20px 10px;
+        color: white;
+    }
+} */
+
+/* SM - Small Screen */
+/* @media only screen and (max-width: 576px){
+
+} */
+
+
+/* @timiodulate css template */
