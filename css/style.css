@@ -60,6 +60,11 @@ p {
     width: 16%;
 }
 
+.myTooltips,
+.myTooltips:hover {
+    display: none;
+}
+
 #myTooltips a img,
 .shareImgC {
     background-color: var(--background);
@@ -129,8 +134,7 @@ p {
     .card-body {
         padding: 35px;
     }
-    .active,
-    .myTooltips {
+    .active {
         display: none;
     }
     
