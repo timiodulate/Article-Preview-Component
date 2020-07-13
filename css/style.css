@@ -133,9 +133,11 @@ p {
     .card-body {
         padding: 35px;
     }
-    .active {
+    .active,
+    .myTooltips {
         display: none;
     }
+    
 }
 
 /* @timiodulate css template */
