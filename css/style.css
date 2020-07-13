@@ -66,11 +66,10 @@ p {
     padding: 10px;
     border-radius: 50%;
 }
-/* #myTooltips a img:hover,
+/* #myTooltips a img:hover,*/
 .shareImgC {
     background-color: var(--last-section);
-    color: white;
-} */
+}
 .tooltip-inner,
 .activeLeft {
     background-color: var(--header);
