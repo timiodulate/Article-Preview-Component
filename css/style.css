@@ -101,9 +101,6 @@ p {
 .show {
     display: flex;
 }
-.activeLeft{
-    padding: 0;
-}
 
 
 .attribution { 
