@@ -61,6 +61,11 @@ p {
     width: 16%;
 }
 
+#myTooltips,
+#myTooltips:hover {
+    display: none;
+}
+
 #myTooltips a img,
 .shareImgC {
     background-color: var(--background);
