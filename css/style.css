@@ -25,12 +25,10 @@ html {
 
 body {
 	width: 100vw;
-    
+	padding: 30px 0;
 	display: flex;
 	flex-direction: column;
-    justify-content: center;
-    
-
+	justify-content: center;
 	font-family: var(--body), sans-serif;
 	font-size: 13px;
 	background-color: var(--background);
@@ -38,44 +36,45 @@ body {
 
 h5,
 h6 {
-    color: var(--header);
+	color: var(--header);
 	font-weight: var(--bold);
 }
+
 p {
-    color: var(--header);
+	color: var(--header);
 }
 
 .card {
-    margin-top: 20px;
 	border-radius: 15px;
 	width: 330px;
 }
-.card-img-top {
-    border-radius: 15px 15px 0 0;
+
+.card__image {
+	border-radius: 15px 15px 0 0;
 }
-.card-body {
-    padding: 35px 25px 15px;
+
+.card__body {
+	padding: 35px 25px 15px;
 	position: relative;
 }
-.avatarImage {
-    width: 16%;
+
+.card__avatar_image {
+	width: 16%;
 }
 
-#myTooltips,
-#myTooltips:hover {
-    display: none;
-}
-
-#myTooltips a img,
-.shareImgC {
-    background-color: var(--background);
+.card__tooltips a img,
+.card__share_image-c {
+	background-color: var(--background);
 	padding: 10px;
 	border-radius: 50%;
 }
-/* #myTooltips a img:hover */
-.shareImgC {
-    background-color: var(--last-section);
+
+/* .card__tooltips a img:hover */
+.card__share_image-c {
+	background-color: var(--last-section);
+
 }
+
 .tooltip-inner,
 .activeLeft {
 	background-color: var(--header);
@@ -84,17 +83,18 @@ p {
 	align-items: center;
 	padding: 15px 35px;
 }
+
 .tooltip-inner p,
 .activeLeft p {
-    color: var(--text);
+	color: var(--text);
 	margin: 0;
 	letter-spacing: 7px;
 	font-weight: var(--bold);
 	margin-right: 10px;
 }
 
-.active {
-    border-radius: 0 0 15px 15px;
+.card__active {
+	border-radius: 0 0 15px 15px;
 	padding: 15px 25px;
 	background-color: var(--header);
 	position: absolute;
@@ -104,40 +104,41 @@ p {
 	justify-content: space-between;
 	display: none;
 }
+
 .show {
-    display: flex;
+	display: flex;
 }
 
 .attribution {
-    text-align: center;
-	padding: 20px;
+	text-align: center;
+	padding-top: 20px;
 	font-size: 15px;
 }
 .attribution a {
-    color: var(--last-section);
+	color: var(--last-section);
 	text-decoration: none;
 }
 
 /* Media Queries - Responsiveness */
 /* LG - Large Screen */
 @media only screen and (min-width: 765px) {
-    body {
-        height: 100vh;
-    }
-    .card {
-        display: flex;
+	body {
+		height: 100vh;
+	}
+	.card {
+		display: flex;
 		flex-direction: row;
 		width: 700px;
-		height: 300px;
+		height: 270px;
 	}
-	.card-img-top {
+	.card__image {
 		width: 40%;
 		border-radius: 15px 0 0 15px;
 	}
-	.card-body {
+	.card__body {
 		padding: 35px;
 	}
-	.active {
+	.card__active {
 		display: none;
 	}
 }
